@@ -1,6 +1,6 @@
 # 🔴 Pokédex
 
-Bem-vindo ao projeto Pokédex! Este é um projeto desenvolvido com *React*, *Vite*, *CSS*, *Redux* e *Axios*. O projeto oferece uma linda interface de usuário com alternância de modo escuro, um popup personalizado para o usuário com seu nome além da listagem de pokémons com informações.
+Bem-vindo ao projeto Pokédex! Este é um projeto desenvolvido com *React*, *Express*, *Vite*, *CSS*, *Redux* e *Axios*. O projeto oferece uma linda interface de usuário com alternância de modo escuro, um popup personalizado para o usuário com seu nome além da listagem de pokémons com informações.
 
 ## 📸 Demonstração
 
@@ -41,16 +41,16 @@ Bem-vindo ao projeto Pokédex! Este é um projeto desenvolvido com *React*, *Vit
 
 2. *Instale as dependências*:
 
-    bash
+   ``` bash
     cd pokedex-app
     npm install
-    
+    ```
 
 3. *Inicie o servidor de desenvolvimento*:
 
-    bash
+   ``` bash
     npm run dev
-    
+    ```
 
 O projeto estará em execução em [http://localhost:3000](http://localhost:3000).
 
