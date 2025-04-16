@@ -65,22 +65,6 @@ const PokemonCard = ({ pokemon }) => {
     const firstTypeFixed = firstType?.toUpperCase();
     const secondTypeFixed = secondType?.toUpperCase();
 
-    const handleFavoritar = async () => {
-        try {
-            const favorito = {
-                id: pokemonData.id,
-                nome: pokemonName,
-                tipo: pokemonData.types?.[0]?.type?.name,
-            };
-
-            await axios.post('http://localhost:3001/api/favoritos', favorito);
-            alert('Pokémon favoritado com sucesso!');
-        } catch (error) {
-            console.error('Erro ao favoritar:', error);
-            alert('Erro ao favoritar o Pokémon.');
-        }
-    };
-
     return (
         <div onClick={() => navigate(`/pokedex/${pokemonData.id}`)}>
             <li className="pokemon-card" style={{ background: setColor() }}>
@@ -121,11 +105,6 @@ const PokemonCard = ({ pokemon }) => {
                             </>
                         )}
                     </div>
-
-                    <button className="favoritar-btn" onClick={(e) => { e.stopPropagation(); handleFavoritar(); }}>
-                        Favoritar
-                    </button>
-
                     <div className="wiki-description">
                         {descricaoWiki && (
                             <>
